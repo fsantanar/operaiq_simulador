@@ -6,6 +6,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      DB_USER: testuser
+      DB_PASSWORD: testpass
+      DB_NAME: testdb
+
     steps:
     - uses: actions/checkout@v4
 
