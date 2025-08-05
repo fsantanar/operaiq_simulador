@@ -17,7 +17,7 @@
 ## 🧠 Estructura general del proyecto
 
 ```text
-operaiq-simulador/
+operaiq_simulador/
 │
 ├── scripts/                # Scripts principales de ejecución paso a paso
 ├── src/                    # Módulos reutilizables: modelos, conexión, utils, constantes
@@ -66,7 +66,7 @@ En Windows: Descárgalo desde https://graphviz.org/download/ y asegúrate de agr
 
 ```bash
 git clone https://github.com/fsantanar/operaiq_simulador.git
-cd operaiq-simulador
+cd operaiq_simulador
 ```
 
 ### **2. Instala las dependencias:**
