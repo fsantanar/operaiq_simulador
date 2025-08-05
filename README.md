@@ -32,7 +32,7 @@ operaiq-simulador/
 ```
 
 ## 🖼️ Diagrama ERD
-<img src="erd/diagrama_entidad_relacion.png" alt="ERD del Sistema" width="600">
+<img src="erd/diagrama_entidad_relacion.png" alt="ERD del Sistema" width="900">
 
 ## ⚙️ Requisitos
 
