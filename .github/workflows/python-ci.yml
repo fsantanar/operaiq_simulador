@@ -7,9 +7,11 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      DB_USER: testuser
-      DB_PASSWORD: testpass
-      DB_NAME: testdb
+      db_user: testuser
+      db_password: testpass
+      db_name: testdb
+      db_admin_user: postgres
+      db_admin_db: postgres
 
     steps:
     - uses: actions/checkout@v4
