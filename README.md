@@ -36,7 +36,7 @@ operaiq_simulador/
 
 ## ⚙️ Requisitos
 
-- Python 3.9 o superior
+- Python 3.11 o superior
 
 - Paquetes: ver requirements.txt
 
@@ -71,7 +71,7 @@ cd operaiq_simulador
 
 ### **2. Instala las dependencias:**
 
-Asegúrate de tener Python 3.9 o superior y luego instala los paquetes requeridos:
+Asegúrate de tener Python 3.11 o superior y luego instala los paquetes requeridos:
 
 
 ```bash
