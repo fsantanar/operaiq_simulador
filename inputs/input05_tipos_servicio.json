@@ -1,0 +1,374 @@
+[
+
+    {
+    "nombre": "Servicio individual: Mantención básica de horquilla",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria liviana",
+    "descripcion": "Incluye revisión de aceite, frenos y cambio de filtros.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 6.0,
+    "tipos_trabajo": [
+        "Mantención básica de horquilla"
+    ]
+    },
+    {
+    "nombre": "Servicio individual: Cambio de neumáticos camión tolva",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria pesada",
+    "descripcion": "Retiro y reemplazo de neumáticos desgastados.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 12,
+    "tipos_trabajo": [
+        "Cambio de neumáticos camión tolva"
+    ]
+    },
+    {
+    "nombre": "Servicio individual: Inspección estructural de maquinaria pesada",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria pesada",
+    "descripcion": "Verificación de fisuras y desgaste en chasis y componentes estructurales.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 12,
+    "tipos_trabajo": [
+        "Inspección estructural de maquinaria pesada"
+    ]
+    },
+    {
+    "nombre": "Servicio individual: Diagnóstico eléctrico vehículo particular",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria liviana",
+    "descripcion": "Revisión de batería, fusibles, y sensores.",
+    "tipo_cliente": "personas",
+    "periodicidad_tipica_meses": 24,
+    "tipos_trabajo": [
+        "Diagnóstico eléctrico vehículo particular"
+    ]
+    },
+    {
+    "nombre": "Servicio individual: Cambio de aceite maquinaria pesada",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria pesada",
+    "descripcion": "Incluye drenar, reemplazar filtro y rellenar aceite.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 6,
+    "tipos_trabajo": [
+        "Cambio de aceite maquinaria pesada"
+    ]
+    },
+    {
+    "nombre": "Servicio individual: Limpieza profunda interior cabina camión",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria pesada",
+    "descripcion": "Incluye desinfección y limpieza con vapor.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 6,
+    "tipos_trabajo": [
+        "Limpieza profunda interior cabina camión"
+    ]
+    },
+    {
+    "nombre": "Servicio individual: Reemplazo frenos vehículo particular",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria liviana",
+    "descripcion": "Cambio de pastillas y limpieza de componentes.",
+    "tipo_cliente": "personas",
+    "periodicidad_tipica_meses": 18,
+    "tipos_trabajo": [
+        "Reemplazo frenos vehículo particular"
+    ]
+    },
+    {
+    "nombre": "Servicio individual: Revisión hidráulica general maquinaria pesada",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria pesada",
+    "descripcion": "Inspección de fugas, presión y nivel de fluidos.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 12,
+    "tipos_trabajo": [
+        "Revisión hidráulica general maquinaria pesada"
+    ]
+    },
+    {
+    "nombre": "Servicio individual: Instalación de sistema GPS en flota camiones",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria pesada",
+    "descripcion": "Instalación de hardware y pruebas de comunicación.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 0,
+    "tipos_trabajo": [
+        "Instalación de sistema GPS en flota camiones"
+    ]
+    },
+    {
+    "nombre": "Servicio individual: Alineación dirección vehículo particular",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria liviana",
+    "descripcion": "Corrección de alineación para seguridad vial.",
+    "tipo_cliente": "personas",
+    "periodicidad_tipica_meses": 12,
+    "tipos_trabajo": [
+        "Alineación dirección vehículo particular"
+    ]
+    },
+    {
+    "nombre": "Servicio individual: Cambio de batería horquilla eléctrica",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria liviana",
+    "descripcion": "Remoción y reemplazo de batería descargada.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 24,
+    "tipos_trabajo": [
+        "Cambio de batería horquilla eléctrica"
+    ]
+    },
+    {
+    "nombre": "Servicio individual: Revisión de luces en maquinaria pesada",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria pesada",
+    "descripcion": "Revisión de sistema eléctrico y reemplazo de focos.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 6,
+    "tipos_trabajo": [
+        "Revisión de luces en maquinaria pesada"
+    ]
+    },
+    {
+    "nombre": "Servicio individual: Revisión sistema frenos camiones",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria pesada",
+    "descripcion": "Chequeo de frenos neumáticos y nivel de presión.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 6,
+    "tipos_trabajo": [
+        "Revisión sistema frenos camiones"
+    ]
+    },
+    {
+    "nombre": "Servicio individual: Instalación de sistema de cámaras en camión tolva",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria pesada",
+    "descripcion": "Montaje e integración de cámaras de retroceso y laterales para seguridad.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 0,
+    "tipos_trabajo": [
+        "Instalación de sistema de cámaras en camión tolva"
+    ]
+    },
+    {
+    "nombre": "Servicio individual: Pintura de protección anticorrosiva para maquinaria de obra",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria pesada",
+    "descripcion": "Aplicación de pintura especial para proteger maquinaria expuesta a ambientes salinos.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 24,
+    "tipos_trabajo": [
+        "Pintura de protección anticorrosiva para maquinaria de obra"
+    ]
+    },
+    {
+    "nombre": "Servicio individual: Revisión y ajuste de suspensión de vehículo particular",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria liviana",
+    "descripcion": "Inspección completa de amortiguadores, resortes y componentes de suspensión.",
+    "tipo_cliente": "personas",
+    "periodicidad_tipica_meses": 12,
+    "tipos_trabajo": [
+        "Revisión y ajuste de suspensión de vehículo particular"
+    ]
+    },
+    {
+    "nombre": "Servicio individual: Calibración sistema de pesaje en tolva minera",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria pesada",
+    "descripcion": "Ajuste de sensores para asegurar pesaje correcto de carga transportada.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 6,
+    "tipos_trabajo": [
+        "Calibración sistema de pesaje en tolva minera"
+    ]
+    },
+    {
+    "nombre": "Servicio individual: Mantención de motor diésel en retroexcavadora",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria pesada",
+    "descripcion": "Incluye cambio de filtros, aceite y revisión general de componentes.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 6,
+    "tipos_trabajo": [
+        "Mantención de motor diésel en retroexcavadora"
+    ]
+    },
+    {
+    "nombre": "Servicio individual: Configuración electrónica ECU camión de reparto",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria liviana",
+    "descripcion": "Actualización de parámetros electrónicos del motor y diagnóstico.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 0,
+    "tipos_trabajo": [
+        "Configuración electrónica ECU camión de reparto"
+    ]
+    },
+    {
+    "nombre": "Servicio individual: Limpieza de radiador maquinaria liviana",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria liviana",
+    "descripcion": "Eliminación de sedimentos y revisión de fugas en radiador.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 12,
+    "tipos_trabajo": [
+        "Limpieza de radiador maquinaria liviana"
+    ]
+    },
+    {
+    "nombre": "Mantención completa de horquilla eléctrica",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria liviana",
+    "descripcion": "Incluye mantención básica, revisión de luces y cambio de batería.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 12,
+    "tipos_trabajo": [
+        "Mantención básica de horquilla",
+        "Cambio de batería horquilla eléctrica",
+        "Revisión de luces en maquinaria pesada"
+    ]
+    },
+    {
+    "nombre": "Sistema eléctrico y diagnóstico de vehículos particulares",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria liviana",
+    "descripcion": "Revisión completa de batería, sensores, y suspensión.",
+    "tipo_cliente": "personas",
+    "periodicidad_tipica_meses": 18,
+    "tipos_trabajo": [
+        "Diagnóstico eléctrico vehículo particular",
+        "Revisión y ajuste de suspensión de vehículo particular"
+    ]
+    },
+    {
+    "nombre": "Sistema de frenos y dirección de vehículos particulares",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria liviana",
+    "descripcion": "Incluye revisión y reemplazo de frenos, y alineación de dirección.",
+    "tipo_cliente": "personas",
+    "periodicidad_tipica_meses": 12,
+    "tipos_trabajo": [
+        "Reemplazo frenos vehículo particular",
+        "Alineación dirección vehículo particular"
+    ]
+    },
+    {
+    "nombre": "Pack eléctrico de vehículos particulares",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria liviana",
+    "descripcion": "Diagnóstico eléctrico y alineación.",
+    "tipo_cliente": "personas",
+    "periodicidad_tipica_meses": 18,
+    "tipos_trabajo": [
+        "Diagnóstico eléctrico vehículo particular",
+        "Alineación dirección vehículo particular"
+    ]
+    },
+    {
+    "nombre": "Mantención integral camión tolva",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria pesada",
+    "descripcion": "Incluye cambio de neumáticos, instalación de cámaras y revisión de frenos.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 12,
+    "tipos_trabajo": [
+        "Cambio de neumáticos camión tolva",
+        "Instalación de sistema de cámaras en camión tolva",
+        "Revisión sistema frenos camiones"
+    ]
+    },
+    {
+    "nombre": "Seguridad pasiva camión tolva",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria pesada",
+    "descripcion": "Instalación de cámaras y revisión de frenos.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 12,
+    "tipos_trabajo": [
+        "Instalación de sistema de cámaras en camión tolva",
+        "Revisión sistema frenos camiones"
+    ]
+    },
+    {
+    "nombre": "Pack hidráulico maquinaria pesada",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria pesada",
+    "descripcion": "Cambio de aceite y revisión hidráulica.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 12,
+    "tipos_trabajo": [
+        "Cambio de aceite maquinaria pesada",
+        "Revisión hidráulica general maquinaria pesada"
+    ]
+    },
+    {
+    "nombre": "Revisión estructural y luces maquinaria pesada",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria pesada",
+    "descripcion": "Inspección del chasis y sistema de iluminación.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 12,
+    "tipos_trabajo": [
+        "Inspección estructural de maquinaria pesada",
+        "Revisión de luces en maquinaria pesada"
+    ]
+    },
+    {
+    "nombre": "Revisión y calibración tolva minera",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria pesada",
+    "descripcion": "Revisión frenos, sistema de pesaje y luces.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 12,
+    "tipos_trabajo": [
+        "Revisión sistema frenos camiones",
+        "Calibración sistema de pesaje en tolva minera"
+    ]
+    },
+    {
+    "nombre": "Protección y limpieza maquinaria pesada",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria pesada",
+    "descripcion": "Aplicación de pintura anticorrosiva y limpieza de radiador.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 6,
+    "tipos_trabajo": [
+        "Pintura de protección anticorrosiva para maquinaria de obra",
+        "Limpieza de radiador maquinaria liviana"
+    ]
+    },
+    {
+    "nombre": "Revisión general vehículo particular",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria liviana",
+    "descripcion": "Incluye revisión eléctrica, frenos, alineación y suspensión.",
+    "tipo_cliente": "personas",
+    "periodicidad_tipica_meses": 12,
+    "tipos_trabajo": [
+      "Diagnóstico eléctrico vehículo particular",
+      "Reemplazo frenos vehículo particular",
+      "Alineación dirección vehículo particular",
+      "Revisión y ajuste de suspensión de vehículo particular"
+    ]
+    },
+    {
+    "nombre": "Mantención integral maquinaria pesada",
+    "lugar_atencion": "taller",
+    "tipo_maquinaria": "maquinaria pesada",
+    "descripcion": "Cambio de aceite, revisión hidráulica y estructural, y luces.",
+    "tipo_cliente": "empresas",
+    "periodicidad_tipica_meses": 12,
+    "tipos_trabajo": [
+      "Cambio de aceite maquinaria pesada",
+      "Revisión hidráulica general maquinaria pesada",
+      "Inspección estructural de maquinaria pesada",
+      "Revisión de luces en maquinaria pesada"
+    ]
+    }
+
+]

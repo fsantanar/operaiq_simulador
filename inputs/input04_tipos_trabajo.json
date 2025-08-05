@@ -1,0 +1,451 @@
+[
+  {
+    "nombre": "Mantención básica de horquilla",
+    "descripcion": "Incluye revisión de aceite, frenos y cambio de filtros.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Junior",
+        "horas_hombre": 6
+      }
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "aceite hidráulico industrial",
+        "cantidad": 1
+      },
+      {
+        "nombre_insumo": "paño limpieza industrial",
+        "cantidad": 3
+      },
+      {
+        "nombre_insumo": "filtro aire horquilla",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "nombre": "Cambio de neumáticos camión tolva",
+    "descripcion": "Retiro y reemplazo de neumáticos desgastados.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Senior",
+        "horas_hombre": 10
+      },
+      {
+        "rol": "Mecánico Junior",
+        "horas_hombre": 4
+      }
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "neumático camión tolva",
+        "cantidad": 4
+      },
+      {
+        "nombre_insumo": "llave impacto neumática",
+        "cantidad": 1,
+        "porcentaje_de_uso": 40
+      }
+    ]
+  },
+  {
+    "nombre": "Inspección estructural de maquinaria pesada",
+    "descripcion": "Verificación de fisuras y desgaste en chasis y componentes estructurales.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Senior",
+        "horas_hombre": 8
+      }
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "lámpara inspección LED",
+        "cantidad": 1,
+        "porcentaje_de_uso": 25
+      },
+      {
+        "nombre_insumo": "paño limpieza industrial",
+        "cantidad": 2
+      }
+    ]
+  },
+  {
+    "nombre": "Diagnóstico eléctrico vehículo particular",
+    "descripcion": "Revisión de batería, fusibles, y sensores.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Junior",
+        "horas_hombre": 5
+      }
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "multímetro digital",
+        "cantidad": 1,
+        "porcentaje_de_uso": 30
+      },
+      {
+        "nombre_insumo": "cable diagnóstico OBD2",
+        "cantidad": 1,
+        "porcentaje_de_uso": 50
+      }
+    ]
+  },
+  {
+    "nombre": "Cambio de aceite maquinaria pesada",
+    "descripcion": "Incluye drenar, reemplazar filtro y rellenar aceite.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Junior",
+        "horas_hombre": 6
+      }
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "aceite hidráulico industrial",
+        "cantidad": 5
+      },
+      {
+        "nombre_insumo": "filtro aceite maquinaria pesada",
+        "cantidad": 1
+      },
+      {
+        "nombre_insumo": "contenedor recolección aceite usado",
+        "cantidad": 1,
+        "porcentaje_de_uso": 30
+      }
+    ]
+  },
+  {
+    "nombre": "Limpieza profunda interior cabina camión",
+    "descripcion": "Incluye desinfección y limpieza con vapor.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Junior",
+        "horas_hombre": 4
+      }
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "paño limpieza industrial",
+        "cantidad": 4
+      },
+      {
+        "nombre_insumo": "aspiradora industrial",
+        "cantidad": 1,
+        "porcentaje_de_uso": 40
+      },
+      {
+        "nombre_insumo": "detergente desinfectante",
+        "cantidad": 0.5
+      },
+      {
+        "nombre_insumo": "toalla desechable multiuso",
+        "cantidad": 3
+      }
+    ]
+  },
+  {
+    "nombre": "Reemplazo frenos vehículo particular",
+    "descripcion": "Cambio de pastillas y limpieza de componentes.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Junior",
+        "horas_hombre": 6
+      },
+      {
+        "rol": "Mecánico Senior",
+        "horas_hombre": 3
+      }
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "kit frenos vehículo particular",
+        "cantidad": 1
+      },
+      {
+        "nombre_insumo": "llave impacto neumática",
+        "cantidad": 1,
+        "porcentaje_de_uso": 40
+      }
+    ]
+  },
+  {
+    "nombre": "Revisión hidráulica general maquinaria pesada",
+    "descripcion": "Inspección de fugas, presión y nivel de fluidos.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Senior",
+        "horas_hombre": 10
+      }
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "medidor presión hidráulica",
+        "cantidad": 1,
+        "porcentaje_de_uso": 40
+      },
+      {
+        "nombre_insumo": "aceite hidráulico industrial",
+        "cantidad": 2
+      }
+    ]
+  },
+  {
+    "nombre": "Instalación de sistema GPS en flota camiones",
+    "descripcion": "Instalación de hardware y pruebas de comunicación.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Junior",
+        "horas_hombre": 5
+      }
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "kit instalación GPS",
+        "cantidad": 1
+      },
+      {
+        "nombre_insumo": "herramienta corte cable",
+        "cantidad": 1,
+        "porcentaje_de_uso": 30
+      }
+    ]
+  },
+  {
+    "nombre": "Alineación dirección vehículo particular",
+    "descripcion": "Corrección de alineación para seguridad vial.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Junior",
+        "horas_hombre": 3
+      }
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "alineador dirección electrónico",
+        "cantidad": 1,
+        "porcentaje_de_uso": 25
+      },
+      {
+        "nombre_insumo": "cinta aisladora industrial",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "nombre": "Cambio de batería horquilla eléctrica",
+    "descripcion": "Remoción y reemplazo de batería descargada.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Junior",
+        "horas_hombre": 4
+      }
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "batería horquilla industrial",
+        "cantidad": 1
+      },
+      {
+        "nombre_insumo": "guantes protección alta tensión",
+        "cantidad": 1,
+        "porcentaje_de_uso": 50
+      }
+    ]
+  },
+  {
+    "nombre": "Revisión de luces en maquinaria pesada",
+    "descripcion": "Revisión de sistema eléctrico y reemplazo de focos.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Junior",
+        "horas_hombre": 4
+      }
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "juego focos maquinaria pesada",
+        "cantidad": 1
+      },
+      {
+        "nombre_insumo": "tester eléctrico portátil",
+        "cantidad": 1,
+        "porcentaje_de_uso": 30
+      }
+    ]
+  },
+  {
+    "nombre": "Revisión sistema frenos camiones",
+    "descripcion": "Chequeo de frenos neumáticos y nivel de presión.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Senior",
+        "horas_hombre": 8
+      }
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "medidor presión neumática",
+        "cantidad": 1,
+        "porcentaje_de_uso": 30
+      }
+    ]
+  },
+  {
+    "nombre": "Instalación de sistema de cámaras en camión tolva",
+    "descripcion": "Montaje e integración de cámaras de retroceso y laterales para seguridad.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Junior",
+        "horas_hombre": 6
+      }
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "kit cámaras seguridad camión",
+        "cantidad": 1
+      },
+      {
+        "nombre_insumo": "herramienta corte cable",
+        "cantidad": 1,
+        "porcentaje_de_uso": 30
+      }
+    ]
+  },
+  {
+    "nombre": "Pintura de protección anticorrosiva para maquinaria de obra",
+    "descripcion": "Aplicación de pintura especial para proteger maquinaria expuesta a ambientes salinos.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Junior",
+        "horas_hombre": 5
+      }
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "pintura anticorrosiva maquinaria",
+        "cantidad": 3
+      },
+      {
+        "nombre_insumo": "rodillo pintura industrial",
+        "cantidad": 1,
+        "porcentaje_de_uso": 40
+      }
+    ]
+  },
+  {
+    "nombre": "Revisión y ajuste de suspensión de vehículo particular",
+    "descripcion": "Inspección completa de amortiguadores, resortes y componentes de suspensión.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Junior",
+        "horas_hombre": 6
+      },
+      {
+        "rol": "Mecánico Senior",
+        "horas_hombre": 2
+      }
+
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "herramienta ajuste suspensión",
+        "cantidad": 1,
+        "porcentaje_de_uso": 50
+      },
+      {
+        "nombre_insumo": "lubricante en aerosol",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "nombre": "Calibración sistema de pesaje en tolva minera",
+    "descripcion": "Ajuste de sensores para asegurar pesaje correcto de carga transportada.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Senior",
+        "horas_hombre": 4
+      }
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "software calibración balanzas",
+        "cantidad": 1,
+        "porcentaje_de_uso": 40
+      }
+    ]
+  },
+  {
+    "nombre": "Mantención de motor diésel en retroexcavadora",
+    "descripcion": "Incluye cambio de filtros, aceite y revisión general de componentes.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Senior",
+        "horas_hombre": 12
+      }
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "aceite motor diésel maquinaria pesada",
+        "cantidad": 4
+      },
+      {
+        "nombre_insumo": "filtro aceite retroexcavadora",
+        "cantidad": 1
+      },
+      {
+        "nombre_insumo": "paño limpieza industrial",
+        "cantidad": 2
+      }
+    ]
+  },
+  {
+    "nombre": "Configuración electrónica ECU camión de reparto",
+    "descripcion": "Actualización de parámetros electrónicos del motor y diagnóstico.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Junior",
+        "horas_hombre": 3
+      }
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "computador diagnóstico ECU",
+        "cantidad": 1,
+        "porcentaje_de_uso": 25
+      },
+      {
+        "nombre_insumo": "cinta aisladora industrial",
+        "cantidad": 1
+      }
+    ]
+  },
+  {
+    "nombre": "Limpieza de radiador maquinaria liviana",
+    "descripcion": "Eliminación de sedimentos y revisión de fugas en radiador.",
+    "requerimientos_trabajadores": [
+      {
+        "rol": "Mecánico Junior",
+        "horas_hombre": 5
+      }
+    ],
+    "requerimientos_materiales": [
+      {
+        "nombre_insumo": "fluido limpieza radiador",
+        "cantidad": 1
+      },
+      {
+        "nombre_insumo": "manguera presión media",
+        "cantidad": 1,
+        "porcentaje_de_uso": 30
+      },
+      {
+        "nombre_insumo": "toalla desechable multiuso",
+        "cantidad": 3
+      }
+    ]
+  }
+]
+

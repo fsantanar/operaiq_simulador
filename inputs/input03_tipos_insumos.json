@@ -1,0 +1,797 @@
+[
+  {
+    "nombre": "aceite hidráulico industrial",
+    "descripcion": "Aceite utilizado en sistemas hidráulicos de maquinaria.",
+    "unidad": "litros",
+    "categoria": "",
+    "reutilizable": false,
+    "retorno_en_n_trabajos": 1,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 85000,
+        "unidades_por_paquete": 20,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 44000,
+        "unidades_por_paquete": 10,
+        "minimo_paquetes_compra": 2
+      },
+      {
+        "precio_por_paquete": 5000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 0.5,
+    "entrega_dias_inhabiles": true
+  },
+  {
+    "nombre": "aceite motor diésel maquinaria pesada",
+    "descripcion": "Lubricante para motores diésel de alto rendimiento.",
+    "unidad": "litros",
+    "categoria": "",
+    "reutilizable": false,
+    "retorno_en_n_trabajos": 1,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 95000,
+        "unidades_por_paquete": 20,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 5200,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 0.5,
+    "entrega_dias_inhabiles": true
+  },
+  {
+    "nombre": "alineador dirección electrónico",
+    "descripcion": "Equipo para alinear dirección de vehículos de forma electrónica.",
+    "unidad": "unidades",
+    "categoria": "",
+    "reutilizable": true,
+    "retorno_en_n_trabajos": 10,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 3500000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 7,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "aspiradora industrial",
+    "descripcion": "Aspiradora de alta potencia para limpieza de maquinaria.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": true,
+    "retorno_en_n_trabajos": 10,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 250000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 720000,
+        "unidades_por_paquete": 3,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 3,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "batería horquilla industrial",
+    "descripcion": "Batería de repuesto para horquillas eléctricas industriales.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": false,
+    "retorno_en_n_trabajos": 1,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 380000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 8,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "cable diagnóstico OBD2",
+    "descripcion": "Cable utilizado para diagnóstico vehicular estándar OBD2.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": true,
+    "retorno_en_n_trabajos": 10,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 12000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 105000,
+        "unidades_por_paquete": 10,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 1,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "cinta aisladora industrial",
+    "descripcion": "Rollo de cinta negra para aislar conexiones eléctricas.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": false,
+    "retorno_en_n_trabajos": 1,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 4800,
+        "unidades_por_paquete": 6,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 7500,
+        "unidades_por_paquete": 10,
+        "minimo_paquetes_compra": 5
+      },
+      {
+        "precio_por_paquete": 1000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 0.25,
+    "entrega_dias_inhabiles": true
+  },
+  {
+    "nombre": "computador diagnóstico ECU",
+    "descripcion": "Herramienta electrónica para diagnóstico de unidades de control.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": true,
+    "retorno_en_n_trabajos": 10,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 380000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 6,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "contenedor recolección aceite usado",
+    "descripcion": "Recipiente para almacenar aceite usado de forma segura.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": true,
+    "retorno_en_n_trabajos": 10,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 24000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 220000,
+        "unidades_por_paquete": 10,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 2,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "detergente desinfectante",
+    "descripcion": "Líquido desinfectante para limpieza profunda de equipos.",
+    "unidad": "litros",
+    "categoria": null,
+    "reutilizable": false,
+    "retorno_en_n_trabajos": 1,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 15000,
+        "unidades_por_paquete": 5,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 2800,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 0.5,
+    "entrega_dias_inhabiles": true
+  },
+  {
+    "nombre": "filtro aceite maquinaria pesada",
+    "descripcion": "Filtro específico para motores de maquinaria pesada.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": false,
+    "retorno_en_n_trabajos": 1,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 15000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 68000,
+        "unidades_por_paquete": 5,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 2,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "filtro aceite retroexcavadora",
+    "descripcion": "Filtro para sistemas de aceite de retroexcavadoras.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": false,
+    "retorno_en_n_trabajos": 1,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 12000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 55000,
+        "unidades_por_paquete": 5,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 2,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "filtro aire horquilla",
+    "descripcion": "Filtro de aire para horquillas industriales.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": false,
+    "retorno_en_n_trabajos": 1,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 18000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 85000,
+        "unidades_por_paquete": 5,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 2,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "fluido limpieza radiador",
+    "descripcion": "Líquido para limpieza interna de radiadores.",
+    "unidad": "litros",
+    "categoria": null,
+    "reutilizable": false,
+    "retorno_en_n_trabajos": 1,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 9000,
+        "unidades_por_paquete": 3,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 3200,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 2,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "guantes protección alta tensión",
+    "descripcion": "Guantes aislantes para protección eléctrica.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": true,
+    "retorno_en_n_trabajos": 10,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 45000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 210000,
+        "unidades_por_paquete": 5,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 2,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "herramienta ajuste suspensión",
+    "descripcion": "Herramienta especializada para calibración de suspensión.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": true,
+    "retorno_en_n_trabajos": 10,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 150000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 3,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "herramienta corte cable",
+    "descripcion": "Cortadora de cables utilizada en mantenimiento eléctrico.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": true,
+    "retorno_en_n_trabajos": 10,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 35000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 160000,
+        "unidades_por_paquete": 5,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 2,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "juego focos maquinaria pesada",
+    "descripcion": "Kit de focos de recambio para maquinaria pesada.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": false,
+    "retorno_en_n_trabajos": 1,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 85000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 3,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "kit cámaras seguridad camión",
+    "descripcion": "Sistema de cámaras para monitoreo de camiones.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": false,
+    "retorno_en_n_trabajos": 1,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 250000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 5,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "kit frenos vehículo particular",
+    "descripcion": "Kit de frenos completo para vehículos livianos.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": false,
+    "retorno_en_n_trabajos": 1,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 90000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 2,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "kit instalación GPS",
+    "descripcion": "Conjunto de piezas para instalación de localizador GPS.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": false,
+    "retorno_en_n_trabajos": 1,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 45000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 400000,
+        "unidades_por_paquete": 10,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 3,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "llave impacto neumática",
+    "descripcion": "Herramienta de impacto para aflojar tornillos rápidamente.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": true,
+    "retorno_en_n_trabajos": 10,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 175000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 3,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "lámpara inspección LED",
+    "descripcion": "Lámpara portátil para trabajos de inspección visual.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": true,
+    "retorno_en_n_trabajos": 10,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 12000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 100000,
+        "unidades_por_paquete": 10,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 2,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "lubricante en aerosol",
+    "descripcion": "Spray de grasa para lubricar uniones, pernos, bisagras, etc.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": false,
+    "retorno_en_n_trabajos": 1,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 3500,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 32000,
+        "unidades_por_paquete": 12,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 0.5,
+    "entrega_dias_inhabiles": true
+  },
+  {
+    "nombre": "manguera presión media",
+    "descripcion": "Manguera para sistemas de presión media en maquinaria.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": true,
+    "retorno_en_n_trabajos": 10,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 15000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 70000,
+        "unidades_por_paquete": 5,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 2,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "medidor presión hidráulica",
+    "descripcion": "Instrumento para medir presión hidráulica en equipos.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": true,
+    "retorno_en_n_trabajos": 10,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 75000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 4,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "medidor presión neumática",
+    "descripcion": "Instrumento para control de presión neumática.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": true,
+    "retorno_en_n_trabajos": 10,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 62000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 4,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "multímetro digital",
+    "descripcion": "Dispositivo electrónico para medición de voltaje, corriente y resistencia.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": true,
+    "retorno_en_n_trabajos": 10,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 25000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 120000,
+        "unidades_por_paquete": 5,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 2,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "neumático camión tolva",
+    "descripcion": "Neumático específico para camiones tolva de carga pesada.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": false,
+    "retorno_en_n_trabajos": 1,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 350000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 5,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "paño limpieza industrial",
+    "descripcion": "Paño reutilizable para limpieza general en talleres.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": true,
+    "retorno_en_n_trabajos": 10,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 1500,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 12000,
+        "unidades_por_paquete": 10,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 0.25,
+    "entrega_dias_inhabiles": true
+  },
+  {
+    "nombre": "pintura anticorrosiva maquinaria",
+    "descripcion": "Pintura especializada para proteger maquinaria contra la corrosión.",
+    "unidad": "litros",
+    "categoria": null,
+    "reutilizable": false,
+    "retorno_en_n_trabajos": 1,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 25000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 90000,
+        "unidades_por_paquete": 5,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 2,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "rodillo pintura industrial",
+    "descripcion": "Rodillo para aplicación de pintura en superficies amplias.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": true,
+    "retorno_en_n_trabajos": 10,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 5000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 45000,
+        "unidades_por_paquete": 10,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 0.5,
+    "entrega_dias_inhabiles": true
+  },
+  {
+    "nombre": "software calibración balanzas",
+    "descripcion": "Aplicación para configurar y calibrar balanzas electrónicas.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": true,
+    "retorno_en_n_trabajos": 10,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 80000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 5,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "tester eléctrico portátil",
+    "descripcion": "Dispositivo portátil para pruebas de sistemas eléctricos.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": true,
+    "retorno_en_n_trabajos": 10,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 23000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 3,
+    "entrega_dias_inhabiles": false
+  },
+  {
+    "nombre": "toalla desechable multiuso",
+    "descripcion": "Usada para limpiar piezas en terreno o durante mantenciones.",
+    "unidad": "unidades",
+    "categoria": null,
+    "reutilizable": false,
+    "retorno_en_n_trabajos": 1,
+    "seguimiento_automatizado": true,
+    "nivel_critico": null,
+    "precios": [
+      {
+        "precio_por_paquete": 2000,
+        "unidades_por_paquete": 1,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 50000,
+        "unidades_por_paquete": 50,
+        "minimo_paquetes_compra": 1
+      },
+      {
+        "precio_por_paquete": 37500,
+        "unidades_por_paquete": 50,
+        "minimo_paquetes_compra": 10
+      },
+      {
+        "precio_por_paquete": 180000,
+        "unidades_por_paquete": 200,
+        "minimo_paquetes_compra": 1
+      }
+    ],
+    "dias_entrega_referencia": 0.25,
+    "entrega_dias_inhabiles": true
+  }
+]

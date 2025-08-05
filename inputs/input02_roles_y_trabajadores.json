@@ -1,0 +1,199 @@
+[
+  {
+    "nombre": "Mecánico Senior",
+    "descripcion": "Responsable de reparaciones complejas y diagnóstico avanzado.",
+    "hh_en_uf_fijo": 1.8,
+    "hh_en_uf_honorario": 2.7,
+    "trabajadores": [
+      {
+        "rut": "11098065-2",
+        "nombre": "Claudio Pérez Silva",
+        "iniciacion": "2020-01-01",
+        "termino": null,
+        "modalidad_contrato": "fijo",
+        "disponibilidades": [
+          {"dia_semana": 1, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 2, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 3, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 4, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 5, "feriado": false, "hora_inicio": 9, "hora_fin": 17}
+        ]
+      },
+      {
+        "rut": "16582910-7",
+        "nombre": "Gonzalo Soto Fernández",
+        "iniciacion": "2022-01-01",
+        "termino": null,
+        "modalidad_contrato": "fijo",
+        "disponibilidades": [
+          {"dia_semana": 1, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 2, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 3, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 4, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 5, "feriado": false, "hora_inicio": 9, "hora_fin": 17}
+        ]
+      },
+      {
+        "rut": "10806013-3",
+        "nombre": "Tomás Ramírez Vergara",
+        "iniciacion": "2021-01-01",
+        "termino": null,
+        "modalidad_contrato": "honorario",
+        "disponibilidades": [
+          {"dia_semana": 1, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 2, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 3, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 4, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 5, "feriado": false, "hora_inicio": 9, "hora_fin": 17}
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "Mecánico Junior",
+    "descripcion": "Asiste en reparaciones básicas y labores de mantención.",
+    "hh_en_uf_fijo": 1.0,
+    "hh_en_uf_honorario": 1.5,
+    "trabajadores": [
+      {
+        "rut": "24472682-7",
+        "nombre": "Carlos Muñoz Rojas",
+        "iniciacion": "2020-01-01",
+        "termino": null,
+        "modalidad_contrato": "fijo",
+        "disponibilidades": [
+          {"dia_semana": 1, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 2, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 3, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 4, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 5, "feriado": false, "hora_inicio": 9, "hora_fin": 17}
+        ]
+      },
+      {
+        "rut": "24305915-8",
+        "nombre": "Rodrigo Herrera Pizarro",
+        "iniciacion": "2022-01-01",
+        "termino": null,
+        "modalidad_contrato": "fijo",
+        "disponibilidades": [
+          {"dia_semana": 1, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 2, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 3, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 4, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 5, "feriado": false, "hora_inicio": 9, "hora_fin": 17}
+        ]
+      },
+      {
+        "rut": "23500242-6",
+        "nombre": "Patricia Fuentes Castillo",
+        "iniciacion": "2021-01-01",
+        "termino": null,
+        "modalidad_contrato": "honorario",
+        "disponibilidades": [
+          {"dia_semana": 1, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 2, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 3, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 4, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 5, "feriado": false, "hora_inicio": 9, "hora_fin": 17}
+        ]
+      },
+      {
+        "rut": "24205868-8",
+        "nombre": "Jorge González Díaz",
+        "iniciacion": "2020-01-01",
+        "termino": null,
+        "modalidad_contrato": "honorario",
+        "disponibilidades": [
+          {"dia_semana": 1, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 2, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 3, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 4, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 5, "feriado": false, "hora_inicio": 9, "hora_fin": 17}
+        ]
+      },
+      {
+        "rut": "22246869-8",
+        "nombre": "Francisco Cifuentes Rojas",
+        "iniciacion": "2022-03-01",
+        "termino": null,
+        "modalidad_contrato": "honorario",
+        "disponibilidades": [
+          {"dia_semana": 1, "feriado": false, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 1, "feriado": true, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 2, "feriado": false, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 2, "feriado": true, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 3, "feriado": false, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 3, "feriado": true, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 4, "feriado": false, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 4, "feriado": true, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 5, "feriado": false, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 5, "feriado": true, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 6, "feriado": false, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 6, "feriado": true, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 7, "feriado": false, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 7, "feriado": true, "hora_inicio": 9, "hora_fin": 19}
+        ]
+      },
+      {
+        "rut": "21648021-K",
+        "nombre": "Juan Salgado Romo",
+        "iniciacion": "2022-03-01",
+        "termino": null,
+        "modalidad_contrato": "honorario",
+        "disponibilidades": [
+          {"dia_semana": 1, "feriado": false, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 1, "feriado": true, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 2, "feriado": false, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 2, "feriado": true, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 3, "feriado": false, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 3, "feriado": true, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 4, "feriado": false, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 4, "feriado": true, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 5, "feriado": false, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 5, "feriado": true, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 6, "feriado": false, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 6, "feriado": true, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 7, "feriado": false, "hora_inicio": 9, "hora_fin": 19},
+          {"dia_semana": 7, "feriado": true, "hora_inicio": 9, "hora_fin": 19}
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "Supervisor de Operaciones",
+    "descripcion": "Encargado de supervisar y coordinar las actividades del taller.",
+    "hh_en_uf_fijo": 2.2,
+    "hh_en_uf_honorario": 3.3,
+    "trabajadores": [
+      {
+        "rut": "19133237-3",
+        "nombre": "Luis Araya Valencia",
+        "iniciacion": "2020-01-01",
+        "termino": null,
+        "modalidad_contrato": "fijo",
+        "disponibilidades": [
+          {"dia_semana": 1, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 3, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 5, "feriado": false, "hora_inicio": 9, "hora_fin": 17}
+        ]
+
+      },
+      {
+        "rut": "17226570-5",
+        "nombre": "Esteban Martínez Salgado",
+        "iniciacion": "2022-03-01",
+        "termino": "2023-12-31",
+        "modalidad_contrato": "honorario",
+        "disponibilidades": [
+          {"dia_semana": 1, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 2, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 3, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 4, "feriado": false, "hora_inicio": 9, "hora_fin": 17},
+          {"dia_semana": 5, "feriado": false, "hora_inicio": 9, "hora_fin": 17}
+        ]
+
+      }
+    ]
+  }
+]
+

@@ -1,0 +1,39 @@
+# Entornos virtuales
+.venv/
+env/
+venv/
+
+# Archivos de Python compilados
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Archivos temporales y de sistema
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Archivos de logs
+logs/*
+!logs/.gitkeep
+
+# Archivos de bases de datos o dumps
+*.sqlite3
+*.db
+*.sql
+
+# Archivo de configuración local pero no .env.example
+.env
+
+
+# Archivos CSV generados para llenar tablas
+contenido_tablas/*.csv
+!contenido_tablas/.gitkeep
+
+# Archivos de salida o pruebas intermedias
+resultados/
+outputs/
+temp/
+*.tmp
+
