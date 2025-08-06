@@ -2,7 +2,7 @@ from peewee import (
     CharField, DateField, FloatField, BooleanField, DateTimeField,
     IntegerField, TextField, ForeignKeyField, Check, SQL
 )
-from src.conexion import BaseModel, db
+from src.conexion import BaseModel
 
 
 

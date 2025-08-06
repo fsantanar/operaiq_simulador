@@ -14,10 +14,12 @@ db_user = os.getenv('db_user')
 db_password = os.getenv('db_password')
 db_admin_user = os.getenv('db_admin_user')
 db_admin_db = os.getenv('db_admin_db')
-
-# Por ahora estas variables estan solo definidas en el entorno de GitHub no en el local
+db_admin_password = os.getenv('db_admin_password')
 db_host = os.getenv('DB_HOST')
 db_port = os.getenv('DB_PORT')
+# Agregamos el password de superusuario al ambiente a usar en los comandos de psql 
+env = os.environ.copy()
+env["PGPASSWORD"] = db_admin_password
 
 # Función auxiliar para construir argumentos psql
 
@@ -31,12 +33,12 @@ def crear_usuario(user, password):
     create_user_sql = f"CREATE USER {user} WITH PASSWORD '{password}';"
 
     # Verificar si el usuario existe
-    result = subprocess.run(psql_args() + ['-tAc', check_user_sql],capture_output=True, text=True)
+    result = subprocess.run(psql_args() + ['-tAc', check_user_sql],capture_output=True, text=True,env=env)
 
     if result.stdout.strip() == '1':
         print(f"El usuario {user} ya existe. No se necesita crear.")
     else:
-        subprocess.run( psql_args() + ['-c', create_user_sql], check=True)
+        subprocess.run( psql_args() + ['-c', create_user_sql], check=True,env=env)
         print(f"Usuario {user} creado exitosamente.")
 
 
@@ -52,14 +54,14 @@ def crear_base_datos(db_name, db_user):
 
     # Borrar la base de datos si existe
     print(f"Eliminando la base de datos '{db_name}' si existe...")
-    subprocess.run(psql_args() + ['-c', f"DROP DATABASE IF EXISTS {db_name};"],check=False)
+    subprocess.run(psql_args() + ['-c', f"DROP DATABASE IF EXISTS {db_name};"],check=False,env=env)
     print(f"Base de datos '{db_name}' eliminada o no existía.")
 
     # Intentar crear la base de datos con un owner específico
     try:
         print(f"Creando la base de datos '{db_name}' con propietario '{db_user}'...")
         resultado = subprocess.run(psql_args() + ['-c', f"CREATE DATABASE {db_name} OWNER {db_user};"],
-                                   text=True, capture_output=True, check=True)
+                                   text=True, capture_output=True, check=True,env=env)
         if resultado.returncode == 0:
             print(f"La base de datos '{db_name}' fue creada exitosamente con propietario '{db_user}'.")
         else:
@@ -74,9 +76,9 @@ def crear_base_datos(db_name, db_user):
         revoke_public_sql = f"REVOKE CONNECT ON DATABASE {db_name} FROM PUBLIC;"
         grant_user_sql = f"GRANT CONNECT ON DATABASE {db_name} TO {db_user};"
         resultado_revoke = subprocess.run(psql_args() + ['-c', revoke_public_sql], text=True,
-                                          capture_output=True, check=True)
+                                          capture_output=True, check=True,env=env)
         resultado_grant = subprocess.run(psql_args() + ['-c', grant_user_sql],
-                                         text=True, capture_output=True, check=True)
+                                         text=True, capture_output=True, check=True,env=env)
         print(f"Permisos configurados correctamente. Acceso restringido a '{db_user}'.")
     except subprocess.CalledProcessError as e:        
         print(f"Error al configurar permisos: {e.stderr or e}")

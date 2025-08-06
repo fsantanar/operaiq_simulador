@@ -16,3 +16,4 @@ db = PostgresqlDatabase(db_name, user=db_user, password=db_password, host='local
 class BaseModel(Model):
     class Meta:
         database = db
+
