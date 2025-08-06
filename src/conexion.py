@@ -7,9 +7,9 @@ from pathlib import Path
 base_dir = Path(__file__).resolve().parent.parent
 load_dotenv(dotenv_path=base_dir / '.env')
 
-db_name = os.getenv('db_name')
-db_user = os.getenv('db_user')
-db_password = os.getenv('db_password')
+db_name = os.getenv('DB_NAME')
+db_user = os.getenv('DB_USER')
+db_password = os.getenv('DB_PASSWORD')
 
 db = PostgresqlDatabase(db_name, user=db_user, password=db_password, host='localhost')
 
