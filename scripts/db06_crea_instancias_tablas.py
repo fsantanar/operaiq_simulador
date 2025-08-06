@@ -1,4 +1,4 @@
-print('Comenzando db06')
+print('Comenzando db06', flash=True)
 import time
 import numpy as np
 import yaml
@@ -10,7 +10,7 @@ from peewee import chunked, fn
 import os
 import sys
 from pathlib import Path
-print('Importó primeros modulos')
+print('Importó primeros modulos', flash=True)
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from src.conexion import db
 
