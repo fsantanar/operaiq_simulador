@@ -14,6 +14,10 @@ import numpy as np
 ###                                             ###
 ###################################################
 
+def integral_trapezoide(y, x):
+    return np.sum((x[1:] - x[:-1]) * (y[1:] + y[:-1]) / 2)
+
+
 def lee_json(nombre_y_ruta_archivo):
     with open(nombre_y_ruta_archivo, 'r', encoding='utf-8') as f:
         output = json.load(f)

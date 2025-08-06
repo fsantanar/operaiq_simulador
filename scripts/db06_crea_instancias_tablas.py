@@ -4,14 +4,13 @@ import numpy as np
 import yaml
 import random as rn
 import datetime
-from scipy.integrate import trapz
 from dateutil.relativedelta import relativedelta
 import pandas as pd
 from peewee import chunked, fn
 import os
 import sys
 from pathlib import Path
-print('Importo primeros modulos')
+print('Importó primeros modulos')
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from src.conexion import db
 
@@ -23,7 +22,7 @@ from src.modelos import (Trabajadores, DisponibilidadesTrabajadores, Clientes, T
 from src.modelos import TiposServicioATiposTrabajo as TSATT
 from src.utils import (decide_compra, hash_dataframe, define_delta_tiempo, desplazar_dias_habiles,
                        es_feriado, fechahora_a_float_hora, id_actual_modelo, obtener_intervalos_dia,
-                       restar_rangos, combina_dia_y_float_hora_en_dt)
+                       restar_rangos, combina_dia_y_float_hora_en_dt, integral_trapezoide)
 import os
 import logging
 print('Importo segundos modulos')
@@ -78,6 +77,7 @@ solo_trabajadores_fijos = config['instancias']['solo_trabajadores_fijos']
 
 
 print('Paso 3')
+
 
 
 def filtra_dfs_insumo_consumo(ids_tipos_insumo, df_insumos,df_consumos,inicio_trabajos,fin_trabajos,tipo_filtro):
@@ -1591,7 +1591,7 @@ def genera_registros_base(Clientes, TiposServicio, Proyectos, Servicios, Cotizac
     )
 
     # Normalizar densidad para que área sea igual a C
-    area_original = trapz(densidad, t)
+    area_original = integral_trapezoide(densidad, t)
     densidad *= C / area_original
 
     # Obtener CDF normalizada
