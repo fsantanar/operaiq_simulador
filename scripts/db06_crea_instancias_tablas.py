@@ -1,3 +1,4 @@
+print('Comenzando db06')
 import time
 import numpy as np
 import yaml
