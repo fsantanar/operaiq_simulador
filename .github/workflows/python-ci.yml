@@ -54,6 +54,9 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt
 
+    - name: Install Graphviz
+      run: sudo apt-get update && sudo apt-get install -y graphviz
+
     - name: Run app scripts
       run: |
         python scripts/db01_crea_base_de_datos.py
