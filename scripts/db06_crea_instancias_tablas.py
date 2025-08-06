@@ -3,6 +3,7 @@ import numpy as np
 import yaml
 import random as rn
 import datetime
+from scipy.integrate import trapz
 from dateutil.relativedelta import relativedelta
 import pandas as pd
 from peewee import chunked, fn
@@ -1589,7 +1590,7 @@ def genera_registros_base(Clientes, TiposServicio, Proyectos, Servicios, Cotizac
     )
 
     # Normalizar densidad para que área sea igual a C
-    area_original = np.trapz(densidad, t)
+    area_original = trapz(densidad, t)
     densidad *= C / area_original
 
     # Obtener CDF normalizada
