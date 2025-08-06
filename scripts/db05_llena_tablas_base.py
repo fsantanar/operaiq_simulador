@@ -1,11 +1,15 @@
 import os
 import sys
+from pathlib import Path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from src.conexion import db
 
 
-# Ruta donde están los CSV
-CARPETA_CSV = '../contenido_tablas/'
+# Ruta base del proyecto (dos niveles arriba del script)
+base_dir = Path(__file__).resolve().parent.parent
+
+# Ruta absoluta de los CSV
+CARPETA_CSV = str(base_dir / 'contenido_tablas') + '/'
 
 # Lista de archivos csv y sus tablas destino
 ARCHIVOS_TABLAS = [

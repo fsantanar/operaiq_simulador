@@ -10,13 +10,22 @@ import json
 import datetime
 import math
 import sys
+from pathlib import Path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from src.utils import lee_json, calcular_dv, decide_compra
 
 ti = time.time()
 
+# Ruta base del proyecto (dos niveles arriba del script)
+base_dir = Path(__file__).resolve().parent.parent
+
+# Rutas absolutas construidas desde la base
+config_path = base_dir / 'config.yml'
+carpeta_inputs = str(base_dir / 'inputs') + '/'
+carpeta_contenido_tablas = str(base_dir / 'contenido_tablas') + '/'
+
 # Cargar la configuración desde el archivo YAML
-with open('../config.yml', 'r') as file:
+with open(config_path, 'r') as file:
     config = yaml.safe_load(file)
 
 
@@ -94,9 +103,6 @@ def generar_correo_personal(nombre, apellido1, apellido2,dominio_forzado=None):
 
 
 
-
-carpeta_inputs = '../inputs/'
-carpeta_contenido_tablas = '../contenido_tablas/'
 info_nombres_clientes = lee_json(carpeta_inputs+'input01_nombres_clientes.json')
 nombres_chile = info_nombres_clientes['nombres_chile']
 apellidos_chile = info_nombres_clientes['apellidos_chile']
