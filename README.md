@@ -1,3 +1,9 @@
+[![Build Status](https://github.com/fsantanar/operaiq_simulador/actions/workflows/python-ci.yml/badge.svg)](https://github.com/fsantanar/operaiq_simulador/actions)
+![Python](https://img.shields.io/badge/python-3.11-blue.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/fsantanar/operaiq_simulador)
+![Repo Size](https://img.shields.io/github/repo-size/fsantanar/operaiq_simulador)
+
+
 # OperaIQ – Simulador y Generador de Base de Datos Operativa
 
 **OperaIQ** es una herramienta para simular la operación de una empresa de servicios, generando una base de datos estructurada con reglas lógicas de negocio. Está diseñada para reproducir escenarios realistas y servir como base de análisis, reportería, visualización y pruebas de modelos de optimización.
