@@ -8,6 +8,7 @@ import pandas as pd
 from peewee import chunked, fn
 import os
 import sys
+from pathlib import Path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from src.conexion import db
 
@@ -24,8 +25,14 @@ import os
 import logging
 
 
+# Ruta base del proyecto
+base_dir = Path(__file__).resolve().parent.parent
+
+# Crear carpeta de logs si no existe
+log_dir = base_dir / 'logs'
+log_dir.mkdir(parents=True, exist_ok=True)
 runtime_timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-log_filename = f"../logs/log_{runtime_timestamp}.log"
+log_filename = log_dir / f'log_{runtime_timestamp}.log'
 
 
 logging.basicConfig(
@@ -40,7 +47,8 @@ logging.info("")
 logging.info("Configuración Usada:")
 
 # Cargar la configuración desde el archivo YAML
-with open('../config.yml', 'r') as file:
+config_path = base_dir / 'config.yml'
+with open(config_path, 'r') as file:
     config = yaml.safe_load(file)
 
 
