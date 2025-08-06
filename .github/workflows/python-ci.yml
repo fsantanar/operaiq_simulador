@@ -38,6 +38,9 @@ jobs:
 
 
     steps:
+    - name: Forzar fallo para probar el badge
+      run: exit 1
+      
     - uses: actions/checkout@v3
 
     - name: Set up Python
