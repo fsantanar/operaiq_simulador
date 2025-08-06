@@ -32,6 +32,10 @@ jobs:
       db_user: testuser
       db_password: testpass
       db_name: testdb
+      DB_HOST: localhost
+      DB_PORT: 5432
+      PGPASSWORD: postgres
+
 
     steps:
     - uses: actions/checkout@v3
