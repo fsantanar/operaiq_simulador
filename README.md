@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/fsantanar/operaiq_simulador/actions/workflows/python-ci.yml/badge.svg?branch=main)](https://github.com/fsantanar/operaiq_simulador/actions)
+[![Build Status](https://github.com/fsantanar/operaiq_simulador/actions/workflows/python-ci.yml/badge.svg?branch=main&nocache=1)](https://github.com/fsantanar/operaiq_simulador/actions)
 ![Python](https://img.shields.io/badge/python-3.11-blue.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/fsantanar/operaiq_simulador)
 ![Repo Size](https://img.shields.io/github/repo-size/fsantanar/operaiq_simulador)
