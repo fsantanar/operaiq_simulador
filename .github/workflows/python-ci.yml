@@ -65,4 +65,6 @@ jobs:
         python scripts/db03_crea_ERD.py
         python scripts/db04_crea_csvs_para_tablas_base.py
         python scripts/db05_llena_tablas_base.py
+        python scripts/db06_crea_instancias_tablas.py
+        python scripts/db07_revisa_cargas.py
 
