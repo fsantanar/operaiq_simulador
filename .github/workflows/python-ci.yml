@@ -57,5 +57,5 @@ jobs:
     - name: Run app scripts
       run: |
         python scripts/db01_crea_base_de_datos.py
-        python scripts/db02_modelos.py
+        python scripts/db02_crea_tablas.py
 
