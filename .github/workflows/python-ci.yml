@@ -26,12 +26,12 @@ jobs:
           --health-retries 5
 
     env:
-      db_admin_user: postgres
-      db_admin_password: postgres
-      db_admin_db: postgres
-      db_user: testuser
-      db_password: testpass
-      db_name: testdb
+      DB_ADMIN_USER: postgres
+      DB_ADMIN_PASSWORD: postgres
+      DB_ADMIN_DB: postgres
+      DB_USER: testuser
+      DB_PASSWORD: testpass
+      DB_NAME: testdb
       DB_HOST: localhost
       DB_PORT: 5432
       PGPASSWORD: postgres
@@ -54,7 +54,7 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt
 
-    - name: Run database setup scripts
+    - name: Run app scripts
       run: |
         python scripts/db01_crea_base_de_datos.py
 

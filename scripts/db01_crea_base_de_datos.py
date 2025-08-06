@@ -9,12 +9,12 @@ base_dir = Path(__file__).resolve().parent.parent
 load_dotenv(dotenv_path=base_dir / '.env')
 
 # Leer variables del entorno
-db_name = os.getenv('db_name')
-db_user = os.getenv('db_user')
-db_password = os.getenv('db_password')
-db_admin_user = os.getenv('db_admin_user')
-db_admin_db = os.getenv('db_admin_db')
-db_admin_password = os.getenv('db_admin_password')
+db_name = os.getenv('DB_NAME')
+db_user = os.getenv('DB_USER')
+db_password = os.getenv('DB_PASSWORD')
+db_admin_user = os.getenv('DB_AMIN_USER')
+db_admin_db = os.getenv('DB_ADMIN_DB')
+db_admin_password = os.getenv('DB_ADMIN_PASSWORD')
 db_host = os.getenv('DB_HOST')
 db_port = os.getenv('DB_PORT')
 # Agregamos el password de superusuario al ambiente a usar en los comandos de psql 
@@ -91,7 +91,7 @@ def crear_base_datos(db_name, db_user):
     print("Si realmente quieres exigir que se use contraseña al conectar a la base de datos,")
     print(f"debes agregar la siguiente línea al archivo `pg_hba.conf`:")
     print()
-    print(f"  local   {db_name}   {db_user}   md5")
+    print(f"  local   {db_name}   all   md5")
     print()
     print("🔄 Alternativamente, puedes usar 'all' para aplicarlo a todos los usuarios y bases:")
     print("  local   all         all         md5")
