@@ -1,4 +1,4 @@
-print('Comenzando db06', flash=True)
+print('Comenzando db06', flush=True)
 import time
 import numpy as np
 import yaml
