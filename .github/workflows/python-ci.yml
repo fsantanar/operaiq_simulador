@@ -58,4 +58,7 @@ jobs:
       run: |
         python scripts/db01_crea_base_de_datos.py
         python scripts/db02_crea_tablas.py
+        python scripts/db03_crea_ERD.py
+        python scripts/db04_crea_csvs_para_tablas_base.py
+        python scripts/db05_llena_tablas_base.py
 
