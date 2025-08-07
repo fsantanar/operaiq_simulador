@@ -24,8 +24,9 @@
 
 OperaIQ genera una base de datos operativa simulando el comportamiento de una empresa real de servicios. A través de un conjunto de reglas dinámicas y configurables, modela clientes, proyectos, cotizaciones, tiempos de entrega, disponibilidad de trabajadores, compras de insumos y asignaciones laborales, todo basado en decisiones controladas y variables que se actualizan en el tiempo.
 
+<h3 align="center">🗺️ Diagrama general del sistema</h3>
+
 <p align="center">
-  🗺️ <strong>Mapa conceptual general del sistema</strong><br>
   <img src="diagramas/diagrama_general.png" alt="Evolución Temporal" width="500">
 </p>
 
@@ -57,6 +58,17 @@ Los datos de entrada se separan en:
 Esto permite:
 - Medir sensibilidad de resultados a cambios en reglas o incertidumbres.
 - Proponer mejoras robustas en decisiones operativas.
+
+### 🧩 Generación de Clientes y Servicios
+
+La simulación considera una curva de llegada de clientes que crece rápidamente al inicio y se desacelera al saturarse el mercado. Cada cliente trae asociado un proyecto que define un tipo de servicio (único o periódico), el cual a su vez determina un conjunto de trabajos operativos. Los servicios rechazados o inviables afectan la probabilidad de que el cliente siga solicitando servicios, introduciendo una lógica de retención basada en resultados.
+
+<h3 align="center">🗺️ Diagrama clientes y servicios</h3>
+
+<p align="center">
+  <img src="diagramas/diagrama_general.png" alt="Clientes y Servicios" width="500">
+</p>
+
 
 
 ### 📦 Compra de insumos
