@@ -80,7 +80,7 @@ El sistema calcula combinaciones posibles de compras considerando:
 - Criterio económico: menor costo total, menor precio por unidad, menor demora, etc.
 
 
-### 👷 Asignación de trabajos
+### 👷 Planificación de servicios
 Cada servicio es descompuesto en trabajos → asignaciones → ventanas temporales, buscando:
 - Cumplir con los requisitos de horas necesarias por rol para el servicio, ya sea para labores realizadas
 en conjunto o por trabajadores individuales.
@@ -89,8 +89,11 @@ en conjunto o por trabajadores individuales.
 - Asegurar disponibilidad de lugares de trabajo para todo el servicio.
 - Asegurar que todos los insumos necesarios estén disponibles al momento de iniciar el servicio y durante toda su ejecución.
 
-🗺️ **Mapa conceptual de asignacion de trabajos a trabajadores:**
-_(placeholder para esquema de flujo: solicitud → insumos → asignaciones → confirmación)_
+<h3 align="center">🗺️ Diagrama planificación de servicios</h3>
+
+<p align="center">
+  <img src="diagramas/diagrama_planificacion_servicio.png" alt="Planificación de Servicios" width="250">
+</p>
 
 ### 📈 Simulación de flujo temporal
 Cada día se simulan eventos: solicitudes, entregas, compras, cotizaciones, etc.
