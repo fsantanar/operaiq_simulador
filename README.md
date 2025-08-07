@@ -6,17 +6,17 @@
 
 # OperaIQ – Simulador y Generador de Base de Datos Operativa
 
-**OperaIQ** es una herramienta para simular la operación de una empresa de servicios, generando una base de datos estructurada con reglas lógicas de negocio. Está diseñada para reproducir escenarios realistas y servir como base de análisis, reportería, visualización y pruebas de modelos de optimización.
+**OperaIQ** es una herramienta para simular la operación de una empresa de servicios, generando una base de datos estructurada con reglas lógicas de negocio. Está diseñada para reproducir escenarios realistas y servir como base de análisis, reportería, visualización y pruebas de modelos de optimización. También crea la base de datos necesaria para la contraparte online de esta herramienta presentada en https://github.com/fsantanar/operaiq
 
 ---
 
 ## 📌 Características principales
 
-- Generación reproducible de datos con lógica realista
-- Modelado completo de trabajadores, insumos, clientes, servicios, roles, cotizaciones y más
-- Simulación de flujo temporal de eventos con reglas predefinidas
-- Exportación del modelo ERD como imagen
-- Modularización del código con uso de `peewee` y configuración por `.env`
+- Generación reproducible de datos con lógica realista.
+- Modelado simultaneo de trabajadores, insumos, clientes, servicios, roles, cotizaciones y más.
+- Simulación de flujo temporal de eventos con reglas predefinidas.
+- Generación de base de datos para usar como input en herramientas online.
+- Modularización del código con uso de `peewee` y configuración por `.env`.
 
 ---
 
@@ -38,7 +38,9 @@ _(placeholder para diagrama que relacione decisiones → simulación → resulta
 📊 Este enfoque permite:
 - Evaluar escenarios.
 - Detectar cuellos de botella.
-- Validar estrategias de planificación o abastecimiento.
+- Validar estrategias laborales, de planificación o abastecimiento.
+
+---
 
 ## 🔬 Lógica y algoritmos destacados
 
@@ -51,14 +53,14 @@ Los datos de entrada se separan en:
 - De decisión (estrategias empresariales como a qué proveedor comprar)
 
 Esto permite:
-- Medir sensibilidad de resultados a cambios en reglas.
+- Medir sensibilidad de resultados a cambios en reglas o incertidumbres.
 - Proponer mejoras robustas en decisiones operativas.
 
 
 ### 📦 Compra de insumos
 El sistema calcula combinaciones posibles de compras considerando:
 - Disponibilidad de stock, considerando tanto el stock físico total como el stock operativo disponible, es decir, descontando los insumos ya comprometidos en consumos futuros.
-- Requisitos materiales de cada trabajos involucrado en el servicio.
+- Requisitos materiales de cada trabajo involucrado en el servicio.
 - Tiempo de entrega (en días hábiles o corridos).
 - Promociones por volumen, precio por paquete y mínimos por compra.
 - Criterio económico: menor costo total, menor precio por unidad, menor demora, etc.
@@ -69,7 +71,7 @@ Cada servicio es descompuesto en trabajos → asignaciones → ventanas temporal
 - Cumplir con los requisitos de horas necesarias por rol para el servicio, ya sea para labores realizadas
 en conjunto o por trabajadores individuales.
 - Asignar trabajos a trabajadores disponibles sin superposición, basado en sus horarios y cargas.
-- Minimizar lagunas de inactividad y duración total.
+- Minimizar lagunas de inactividad y duración total de la ejecución.
 - Asegurar disponibilidad de lugares de trabajo para todo el servicio.
 - Asegurar que todos los insumos necesarios estén disponibles al momento de iniciar el servicio y durante toda su ejecución.
 
@@ -77,12 +79,17 @@ en conjunto o por trabajadores individuales.
 _(placeholder para esquema de flujo: solicitud → insumos → asignaciones → confirmación)_
 
 ### 📈 Simulación de flujo temporal
-Cada día se simulan eventos: solicitudes, entregas, compras, cotizaciones, etc. Las reglas se ejecutan en orden cronológico, manteniendo consistencia y trazabilidad entre decisiones y resultados.
+Cada día se simulan eventos: solicitudes, entregas, compras, cotizaciones, etc.
+Las reglas se ejecutan en orden cronológico, manteniendo consistencia y trazabilidad entre decisiones y resultados.
+Cada evento modifica datos como la carga de los trabajadores, la disponibilidad de los insumos, los estados de los servicios
+o trabajos, la llegada o salida de clientes y los movimientos financieros.
+En todo momento se asegura que no hayan inconsistencias como asignaciones laborales traslapantes, uso de insumos no disponibles o trabajos mal definidos. Además se monitorea en todo momento el saldo financiero disponible, asegurandose que haya saldo suficiente para realizar cualquier actividad que involucre gasto, y en caso contrario forzando una inyección de capital que permita continuar las operaciones.
 
+---
 
 ## 🎯 ¿Por qué OperaIQ es diferente?
 
-OperaIQ no es solo una base de datos generada al azar. Es un motor de simulación operativa con fundamentos en optimización discreta, diseño de reglas bajo incertidumbre y modelado algorítmico de procesos reales. Su diseño permite representar con precisión decisiones secuenciales, restricciones operativas y dependencias temporales, habilitando análisis que van más allá de la simple generación de registros.
+OperaIQ no es solo una base de datos generada al azar. Es un motor de simulación operativa con fundamentos en optimización discreta, diseño de reglas bajo incertidumbre y modelado algorítmico de procesos reales. Su diseño permite representar con precisión decisiones secuenciales, restricciones operativas y dependencias temporales, habilitando análisis que van mucho más allá de la simple generación de registros.
 
 🔧 **Técnicas y enfoques destacados:**
 
@@ -90,16 +97,17 @@ OperaIQ no es solo una base de datos generada al azar. Es un motor de simulació
 
 - Implementación de lógica de planificación basada en **restricciones temporales y de recursos**, simulando ventanas de disponibilidad, precedencias de tareas y compatibilidades entre elementos.
 
-- Lógica de abastecimiento que evalúa **espacios factibles de compra** considerando stock físico, stock operativo (descontando consumos futuros) y restricciones de cantidad mínima y tiempo de entrega, resolviendo una instancia simplificada del problema de selección de proveedores.
+- Lógica de abastecimiento que evalúa **espacios factibles de compra** considerando stock físico, stock operativo (descontando consumos futuros) y restricciones de compra mínima y tiempo de entrega, resolviendo una instancia simplificada del problema de selección de proveedores.
 
-- Mecanismo de asignación de recursos inspirado en técnicas de **búsqueda heurística con validación por restricciones**, evaluando múltiples soluciones candidatas y seleccionando la más factible dado el calendario de recursos y los márgenes temporales definidos.
+- Mecanismo de asignación de trabajadores inspirado en técnicas de **búsqueda heurística con validación por restricciones**, evaluando múltiples soluciones candidatas y seleccionando la más factible dado el calendario de recursos y los márgenes temporales definidos.
 
 - Evaluación de propuestas comerciales mediante una función de aceptación estocástica dependiente de múltiples dimensiones (precio y plazo), lo que permite simular la **probabilidad conjunta de éxito** de una oferta bajo escenarios de elasticidad del cliente.
 
-- Registro y trazabilidad detallada de todas las decisiones tomadas por el sistema, permitiendo construir sobre esta base módulos futuros de optimización, análisis causal o aprendizaje de políticas.
+- Registro en logs y trazabilidad detallada de todas las decisiones tomadas por el sistema, permitiendo construir sobre esta base módulos futuros de optimización, análisis causal o aprendizaje de políticas.
 
 Este enfoque permite construir no solo una base de datos, sino una **infraestructura de decisión simulada**, extensible hacia aplicaciones reales de gestión, control y análisis predictivo.
 
+---
 
 ## 🧠 Estructura general del proyecto
 
@@ -118,12 +126,16 @@ operaiq_simulador/
 └── requirements.txt        # Modulos de python necesarios
 ```
 
+---
+
 ## 🖼️ Diagrama ERD
 
 El siguiente esquema muestra el diagrama relacion-entidad con todas las tablas con sus campos
 y relaciones foraneas que las conectan.
 
 <img src="erd/diagrama_entidad_relacion.png" alt="ERD del Sistema" width="900">
+
+---
 
 ## ⚙️ Requisitos
 
@@ -150,6 +162,8 @@ brew install graphviz
 ```
 
 En Windows: Descárgalo desde https://graphviz.org/download/ y asegúrate de agregarlo al PATH.
+
+---
 
 ## 🚀 Cómo usar
 
@@ -227,6 +241,8 @@ python scripts/db05_llena_tablas_base.py
 python scripts/db06_crea_instancias_tablas.py
 python scripts/db07_revisa_cargas.py
 ```
+
+---
 
 ## 🔭 Ideas de Extensión Futura
 
