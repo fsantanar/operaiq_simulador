@@ -25,7 +25,7 @@
 OperaIQ genera una base de datos operativa simulando el comportamiento de una empresa real de servicios. A través de un conjunto de reglas dinámicas y configurables, modela clientes, proyectos, cotizaciones, tiempos de entrega, disponibilidad de trabajadores, compras de insumos y asignaciones laborales, todo basado en decisiones controladas y variables que se actualizan en el tiempo.
 
 🗺️ **Mapa conceptual general del sistema:**
-<img src="diagramas/diagrama_general.png" alt="Evolución Temporal" width="900">
+<img src="diagramas/diagrama_general.png" alt="Evolución Temporal" width="500">
 
 🔄 El tiempo avanza día a día simulando eventos como:
 - Llegada o pérdida de clientes.
