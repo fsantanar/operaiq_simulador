@@ -317,5 +317,5 @@ for origen, destino, estilo in relaciones:
     dot.edge(origen, destino,style=estilo)
 
 base_dir = Path(__file__).resolve().parent.parent
-output_path = base_dir / 'erd' / 'diagrama_entidad_relacion'
+output_path = base_dir / 'diagramas' / 'diagrama_entidad_relacion'
 dot.render(output_path, format='png', cleanup=True)
