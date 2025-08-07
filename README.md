@@ -92,8 +92,41 @@ Crea un archivo .env basado en el archivo de ejemplo:
 cp .env.example .env
 ```
 
-Y luego asigna valores reales para el nombre de la base de datos, el usuario, y la clave.
+Luego abre tu nuevo archivo .env y reemplaza los valores de ejemplo por los reales:
 
+```env
+
+# Base de datos del proyecto
+DB_NAME=operaiq_simulador
+
+# Usuario para que sea dueño de la nueva base de datos con su clave asociada.
+# Si eliges un usuario nuevo se creará con la clave que indiques acá.
+# Si quieres usar un usuario existente simplemente usa su nombre como DB_USER y se
+# mantendrá su clave actual (los códigos no modifican usuarios existentes).
+# Solo asegurate de que el usuario existente cuente con clave o que tu archivo pg_hba
+# le permita conectarse a la base sin clave con una linea como:
+# local   operaiq_simulador  usuario_existente              trust
+DB_USER=usuario
+DB_PASSWORD=clave_usuario
+
+# Usuario administrador (por defecto llamado postgres) con permisos para crear bases de datos y usuarios.
+# DB_ADMIN_PASSWORD debe llevar la clave de este usuario administrador.
+# La base puede ser la que viene por defecto (generalmente llamada postgres) o cualquier a la que tenga
+# acceso el usuario administrador
+DB_ADMIN_USER=postgres
+DB_ADMIN_PASSWORD=clave_superusuario
+DB_ADMIN_DB=postgres
+
+# Host y puerto de conexión
+# Estos puedes dejarlos como están si no quieres personalizarlo
+DB_HOST=localhost
+DB_PORT=5432
+
+
+# Finalmente cambia este boolean a true si quieres que las pruebas de GitHub actions
+# incluyan los dos ultimos scripts que demoran alrededor de 10 minutos.
+RUN_FINAL_SCRIPTS=true
+```
 
 
 ### **4. Corre los scripts en orden desde scripts/db01_...py hasta scripts/db07_...py**

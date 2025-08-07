@@ -75,8 +75,14 @@ jobs:
         echo "▶️ Iniciando db05_llena_tablas_base.py"
         python scripts/db05_llena_tablas_base.py
 
-        echo "▶️ Iniciando db06_crea_instancias_tablas.py"
-        python scripts/db06_crea_instancias_tablas.py
-
-        echo "▶️ Iniciando db07_revisa_cargas.py"
-        python scripts/db07_revisa_cargas.py
+        if [ "$RUN_FINAL_SCRIPTS" = "true" ]; then
+          echo "▶ Ejecutando scripts finales..."
+          echo "▶️ Iniciando db06_crea_instancias_tablas.py"
+          python scripts/db06_crea_instancias_tablas.py
+          echo "▶️ Iniciando db07_revisa_cargas.py"
+          python scripts/db07_revisa_cargas.py
+        else
+          echo "⏭ Scripts finales saltados (RUN_FINAL_SCRIPTS=$RUN_FINAL_SCRIPTS)"
+        fi
+      env:
+        RUN_FINAL_SCRIPTS: ${{ env.RUN_FINAL_SCRIPTS }}
