@@ -60,11 +60,23 @@ jobs:
 
     - name: Run app scripts
       run: |
+        echo "▶️ Iniciando db01_crea_base_de_datos.py"
         python scripts/db01_crea_base_de_datos.py
-        python scripts/db02_crea_tablas.py
-        python scripts/db03_crea_ERD.py
-        python scripts/db04_crea_csvs_para_tablas_base.py
-        python scripts/db05_llena_tablas_base.py
-        python scripts/db06_crea_instancias_tablas.py
-        python scripts/db07_revisa_cargas.py
 
+        echo "▶️ Iniciando db02_crea_tablas.py"
+        python scripts/db02_crea_tablas.py
+
+        echo "▶️ Iniciando db03_crea_ERD.py"
+        python scripts/db03_crea_ERD.py
+
+        echo "▶️ Iniciando db04_crea_csvs_para_tablas_base.py"
+        python scripts/db04_crea_csvs_para_tablas_base.py
+
+        echo "▶️ Iniciando db05_llena_tablas_base.py"
+        python scripts/db05_llena_tablas_base.py
+
+        echo "▶️ Iniciando db06_crea_instancias_tablas.py"
+        python scripts/db06_crea_instancias_tablas.py
+
+        echo "▶️ Iniciando db07_revisa_cargas.py"
+        python scripts/db07_revisa_cargas.py

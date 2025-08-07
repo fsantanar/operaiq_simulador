@@ -6,6 +6,7 @@ import pandas as pd
 from peewee import fn
 import os
 import sys
+from pathlib import Path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from src.modelos import (Roles, Trabajadores, DisponibilidadesTrabajadores,
@@ -14,7 +15,8 @@ from src.modelos import (Roles, Trabajadores, DisponibilidadesTrabajadores,
 from src.modelos import TiposServicioATiposTrabajo as TSATT
 from src.utils import contar_dias_semana
 
-
+# Ruta base del proyecto
+base_dir = Path(__file__).resolve().parent.parent
 
 
 def calcula_horas_totales(df_disponibilidades_por_dia,fecha_in,fecha_final):
@@ -65,7 +67,8 @@ def calcula_horas_por_estacionamiento(df_asignaciones,info_estacionamientos, fec
 
 
 # Cargar la configuración desde el archivo YAML
-with open('../config.yml', 'r') as file:
+config_path = base_dir / 'config.yml'
+with open(config_path, 'r') as file:
     config = yaml.safe_load(file)
 
 

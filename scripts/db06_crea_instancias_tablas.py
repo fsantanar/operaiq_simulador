@@ -1,4 +1,3 @@
-print('Comenzando db06', flush=True)
 import time
 import numpy as np
 import yaml
@@ -10,7 +9,6 @@ from peewee import chunked, fn
 import os
 import sys
 from pathlib import Path
-print('Importó primeros modulos', flush=True)
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from src.conexion import db
 
@@ -25,7 +23,6 @@ from src.utils import (decide_compra, hash_dataframe, define_delta_tiempo, despl
                        restar_rangos, combina_dia_y_float_hora_en_dt, integral_trapezoide)
 import os
 import logging
-print('Importo segundos modulos', flush=True)
 
 # Ruta base del proyecto
 base_dir = Path(__file__).resolve().parent.parent
@@ -75,8 +72,6 @@ uf_por_año = config['csvs']['precios']['uf_por_año']
 probabilidad_perdida_por_rechazo = config['instancias']['clientes']['probabilidad_perdida_por_rechazo']
 solo_trabajadores_fijos = config['instancias']['solo_trabajadores_fijos']
 
-
-print('Paso 3', flush=True)
 
 
 
@@ -1106,7 +1101,6 @@ debug_df_ventanas_total = None
 debug_df_ventanas_con_periodo_contrato = None
 debug_df_ventanas_filtrado = None
 
-print('Paso 4', flush=True)
 
 def calcula_ventanas_trabajadores(Asignaciones, Trabajadores, df_disponibilidad_trabajadores,
                                   ids_roles_involucrados, fechahora_minima, fechahora_maxima,
@@ -1756,7 +1750,6 @@ def genera_registros_base(Clientes, TiposServicio, Proyectos, Servicios, Cotizac
         for batch in chunked(registros_cotizaciones, 100):
             Cotizaciones.insert_many(batch).execute()
 
-print('Paso 5', flush=True)
 
 def crea_df_eventos(df_servicios, MovimientosRecurrentes, fechahora_inicio, fechahora_fin):
     """
@@ -1886,7 +1879,6 @@ def escribe_finanzas_en_log(MovimientosFinancieros,Servicios,logobj, desgloza_po
     logobj.info("")
 
 
-print('Paso 6', flush=True)
 class ClServicio:
     def __init__(self, row_servicio, TSATT, RequerimientosTrabajadores, Asignaciones, Trabajadores,
                  RequerimientosMateriales, TiposInsumo, Trabajos, TiposServicio, df_insumos, df_consumos,
@@ -2310,12 +2302,10 @@ class ClServicio:
                 .where(Proyectos.id == self.id_proyecto)
                 .execute())
 
-print('Paso 7', flush=True)
 # Lo primero que hago es llenar las tablas Clientes, Proyectos, Servicios y 
 # Cotizaciones según los parámetros del archivo de configuracion
 genera_registros_base(Clientes, TiposServicio, Proyectos, Servicios, Cotizaciones, db, config)
 
-print('Paso 8', flush=True)
 
 # Ahora defino todos los datafrmaes que no cambian entre servicio y servicio
 (df_estacionamientos_totales, df_servicios, df_disponibilidad_trabajadores, df_trabajadores,
@@ -2340,7 +2330,6 @@ set_indices_df_a_saltar = set()
 ti =time.time()
 n_servicios = 0
 
-print('Paso 9', flush=True)
 Objetos = {} # Este diccionario es para guardar todos los objetos de servicios
 for idx, row_evento in df_eventos.iterrows():
     # Si el indice del df esta en la lista de los que hay que saltar
@@ -2463,7 +2452,6 @@ for idx, row_evento in df_eventos.iterrows():
         # Y finalmente agregamos la 1 o 2 entradas a movimientos financieros
         MovimientosFinancieros.insert_many(datos_insertar_movimientos_financieros).execute()
 
-print('Paso 10', flush=True)
 
 # Finalmente escribimos el resumen financiero en el log
 # usando la tabla servicios ahora que ya fue actualizada
