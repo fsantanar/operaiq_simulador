@@ -54,44 +54,51 @@ Esto permite:
 - Medir sensibilidad de resultados a cambios en reglas.
 - Proponer mejoras robustas en decisiones operativas.
 
-_(placeholder para un esquema de árbol de decisiones basado en tipo de datos y uso)_
 
 ### 📦 Compra de insumos
 El sistema calcula combinaciones posibles de compras considerando:
-- Disponibilidad de stock.
+- Disponibilidad de stock, considerando tanto el stock físico total como el stock operativo disponible, es decir, descontando los insumos ya comprometidos en consumos futuros.
+- Requisitos materiales de cada trabajos involucrado en el servicio.
 - Tiempo de entrega (en días hábiles o corridos).
-- Promociones por volumen (precio por paquete y mínimos por compra).
-- Criterio económico (menor costo total, no solo menor cantidad).
+- Promociones por volumen, precio por paquete y mínimos por compra.
+- Criterio económico: menor costo total, menor precio por unidad, menor demora, etc.
 
-_(placeholder para un diagrama tipo flujo de decisión sobre compra de insumos)_
 
-### 👷 Asignación de recursos
+### 👷 Asignación de trabajos
 Cada servicio es descompuesto en trabajos → asignaciones → ventanas temporales, buscando:
-- Usar recursos disponibles sin superposición.
-- Minimizar lagunas de inactividad.
-- Maximizar la factibilidad dentro de la ventana aceptable para el cliente.
+- Cumplir con los requisitos de horas necesarias por rol para el servicio, ya sea para labores realizadas
+en conjunto o por trabajadores individuales.
+- Asignar trabajos a trabajadores disponibles sin superposición, basado en sus horarios y cargas.
+- Minimizar lagunas de inactividad y duración total.
+- Asegurar disponibilidad de lugares de trabajo para todo el servicio.
+- Asegurar que todos los insumos necesarios estén disponibles al momento de iniciar el servicio y durante toda su ejecución.
 
+🗺️ **Mapa conceptual de asignacion de trabajos a trabajadores:**
 _(placeholder para esquema de flujo: solicitud → insumos → asignaciones → confirmación)_
 
 ### 📈 Simulación de flujo temporal
 Cada día se simulan eventos: solicitudes, entregas, compras, cotizaciones, etc. Las reglas se ejecutan en orden cronológico, manteniendo consistencia y trazabilidad entre decisiones y resultados.
 
+
 ## 🎯 ¿Por qué OperaIQ es diferente?
 
-OperaIQ no es solo una base de datos de ejemplo: es un motor lógico de simulación que:
+OperaIQ no es solo una base de datos generada al azar. Es un motor de simulación operativa con fundamentos en optimización discreta, diseño de reglas bajo incertidumbre y modelado algorítmico de procesos reales. Su diseño permite representar con precisión decisiones secuenciales, restricciones operativas y dependencias temporales, habilitando análisis que van más allá de la simple generación de registros.
 
-- Integra reglas condicionales, decisiones estratégicas, disponibilidad de recursos y plazos reales.
-- Permite extenderse a decisiones optimizadas, aprendizaje de reglas y detección de cuellos de botella.
-- Genera datos trazables que pueden alimentar dashboards, modelos de ML o sistemas de optimización.
+🔧 **Técnicas y enfoques destacados:**
 
-🧠 Algunas técnicas y decisiones destacadas:
-- Uso de **tipos de datos con roles epistemológicos** (observacional, latente, decisión).
-- Simulación día a día con control de **días hábiles**, plazos dinámicos y pagos diferidos.
-- Asignaciones dinámicas con lógica de **ventanas de disponibilidad** para trabajadores e insumos reutilizables.
-- Modelado de cotizaciones y probabilidades de aceptación dependientes de variables de precio y tiempo.
-- Separación entre precios de referencia, estimados y efectivos para análisis financiero realista.
+- Separación explícita de variables en categorías **observacionales, latentes y de decisión**, permitiendo aplicar estrategias robustas de simulación bajo incertidumbre y análisis de sensibilidad paramétrica.
 
-Este enfoque permite construir no solo una base de datos sino una herramienta flexible, realista y adaptativa.
+- Implementación de lógica de planificación basada en **restricciones temporales y de recursos**, simulando ventanas de disponibilidad, precedencias de tareas y compatibilidades entre elementos.
+
+- Lógica de abastecimiento que evalúa **espacios factibles de compra** considerando stock físico, stock operativo (descontando consumos futuros) y restricciones de cantidad mínima y tiempo de entrega, resolviendo una instancia simplificada del problema de selección de proveedores.
+
+- Mecanismo de asignación de recursos inspirado en técnicas de **búsqueda heurística con validación por restricciones**, evaluando múltiples soluciones candidatas y seleccionando la más factible dado el calendario de recursos y los márgenes temporales definidos.
+
+- Evaluación de propuestas comerciales mediante una función de aceptación estocástica dependiente de múltiples dimensiones (precio y plazo), lo que permite simular la **probabilidad conjunta de éxito** de una oferta bajo escenarios de elasticidad del cliente.
+
+- Registro y trazabilidad detallada de todas las decisiones tomadas por el sistema, permitiendo construir sobre esta base módulos futuros de optimización, análisis causal o aprendizaje de políticas.
+
+Este enfoque permite construir no solo una base de datos, sino una **infraestructura de decisión simulada**, extensible hacia aplicaciones reales de gestión, control y análisis predictivo.
 
 
 ## 🧠 Estructura general del proyecto
