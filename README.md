@@ -92,7 +92,7 @@ en conjunto o por trabajadores individuales.
 <h3 align="center">🗺️ Diagrama planificación de servicios</h3>
 
 <p align="center">
-  <img src="diagramas/diagrama_planificacion_servicio.png" alt="Planificación de Servicios" width="250">
+  <img src="diagramas/diagrama_planificacion_servicio.png" alt="Planificación de Servicios" width="450">
 </p>
 
 ### 📈 Simulación de flujo temporal
