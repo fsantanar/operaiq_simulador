@@ -66,7 +66,7 @@ La simulación considera una curva de llegada de clientes que crece rápidamente
 <h3 align="center">🗺️ Diagrama clientes y servicios</h3>
 
 <p align="center">
-  <img src="diagramas/diagrama_clientes_y_servicios.png" alt="Clientes y Servicios" width="500">
+  <img src="diagramas/diagrama_clientes_y_servicios.png" alt="Clientes y Servicios" width="250">
 </p>
 
 
